@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FeedItem from "./FeedItem";
-import Loading from "./HOC/Loading";
+import HOC from "./HOC/LoadingWithTime";
+
 
 class Feed extends Component {
   render() {
@@ -14,4 +15,4 @@ class Feed extends Component {
   }
 }
 
-export default Loading("contacts")(Feed);
+export default HOC("contacts")(Feed);
